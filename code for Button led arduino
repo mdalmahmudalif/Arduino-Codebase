@@ -1,0 +1,12 @@
+void loop() {
+    switchState = digitalRead(switchPin);
+
+   Serial.println(switchState);
+
+    if (switchState == HIGH) {
+         digitalWrite(ledPin, HIGH);
+     } else {
+         digitalWrite(ledPin, LOW);
+     }    
+ }
+
