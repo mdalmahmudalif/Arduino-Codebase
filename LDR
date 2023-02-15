@@ -1,0 +1,19 @@
+int LED = 13;
+int LDR = 8;
+
+void setup() {
+   pinMode(LED,OUTPUT);
+   pinMode(LDR,INPUT);
+
+}
+
+void loop() {
+  int LDRstat = analogRead(LDR);
+  
+  if (LDRstat < 400) {
+    digitalWrite(LED,LOW);
+  }
+  else {
+    digitalWrite(LED,HIGH);
+  }
+}
